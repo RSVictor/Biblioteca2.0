@@ -45,6 +45,7 @@ input {
 }
 
 .container {
+   
     width: 958px;
 
 }
@@ -204,6 +205,8 @@ i {
 
 }
 
+
+/*pagiana descriçao livros*/
 .descricao {
     width: 600px;
     height: 500px;
@@ -248,20 +251,16 @@ i {
     width: 650px;
 }
 
+
+
 .avaliacoes {
-    display: flex;
     align-items: center;
     width: 950px;
     height: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    ;
-}
-
-.avaliacoes {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 15px;
@@ -296,3 +295,66 @@ i {
 
 }
 
+/* pafina emprestimo*/
+.titulo-emp{    
+    width: 833px;
+    height: 84px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    font-size: 25px;
+    
+}
+
+.campo-emp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.button-emp{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;    
+    width: 123px;
+    height: 40px;    
+    background-color: #335844;
+    border-radius: 10px;
+   
+}
+
+    
+
+
+
+.button-emp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    
+    
+}
+.button-emp a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    
+
+}
+.titulo{
+    
+    width: 1168px;
+    height: 84px;
+    background-color: #AFC1B1;
+}
