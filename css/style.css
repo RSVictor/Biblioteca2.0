@@ -1,17 +1,12 @@
 header {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
+    align-items: center;      
     background-color: #93BFA7;
     height: 138px;
-
 }
 
-h1 {
-    margin: 0;
-}
+
 
 .logo {
     display: flex;
@@ -23,7 +18,7 @@ h1 {
 }
 
 .nav li {
-    margin-left: 2rem;
+    margin-left: 0.5rem;
     /* Ajuste conforme necessário */
 }
 
@@ -45,6 +40,9 @@ input {
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
    
     width: 1140px;
 
@@ -146,7 +144,7 @@ h5 {
 i {
     font-size: 1.6rem;
 }
-
+ 
 
 .btn-outline {
     display: flex;
@@ -224,10 +222,10 @@ i {
 }
 
 .desc {
-
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 20px;
     padding: 20px;
 }
@@ -236,6 +234,7 @@ i {
 .detalhes {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     gap: 10px;
 
 }
@@ -255,7 +254,7 @@ i {
 
 .avaliacoes {
     align-items: center;
-    width: 950px;
+    width: 1140px;
     height: 100px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -267,6 +266,7 @@ i {
     margin-bottom: 20px;
     background-color: #f9f9f9;
 }
+
 
 .pessoa {
     font-weight: bold;
@@ -295,7 +295,26 @@ i {
 
 }
 
-/* pafina emprestimo*/
+/* pagina emprestimo*/
+.user {
+    width: 900px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between; 
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.notificacao{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+
+
 .titulo-emp{    
     width: 833px;
     height: 84px;
@@ -309,6 +328,7 @@ i {
     margin-bottom: 20px;
     background-color: #f9f9f9;
     font-size: 25px;
+   
     
 }
 
@@ -316,13 +336,134 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: center;    
-    margin-top: 80px;
+    
 }
 
+.titulo-emp{
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    text-align: center; 
+    width: 800px;         
+    height: 60px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    border-radius: 10px;     
+    background-color: #f9f9f9;
+    margin-top: 30px;
+}
+
+
+.titulo-emprestimo{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;               
+    width:960px;
+    height: 70px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    border-radius: 10px;     
+    background-color: #AFC1B1;
+    font-size: 18px;
+    
+}
+
+
+ .text-emp{
+    width: 240px;      
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    font-weight: bold;
+    
+    
+}
+ 
+
+.descricao-emprestimo{
+    display: flex;
+    flex-direction: row;       
+    width:960px;
+    height: 250px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;     
+    background-color: #f9f9f9;   
+}
+
+.card-emp{
+    width: 240px;
+    height:248px;   
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;   
+       
+}
+
+.emp-data{
+    width: 240px;
+    height:248px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  
+ 
+}
+.emp-data-dev{
+    width: 240px;
+    height:248px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.emp-data-emp{
+    width: 240px;
+    height:248px;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+     
+}
+
+.data{
+    width: 200px;
+    height:40px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+       
+}
+.icon-emp{
+    width: 100px;
+    height:40px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+        
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 400px;
+       
+}
 .button-emp{
     display: flex;
     flex-direction: row;
-    text-align: center;
+    align-items: center;
     justify-content: center;    
     width: 123px;
     height: 40px;    
@@ -331,20 +472,7 @@ i {
    
 }
 
-    
 
-
-
-.button-emp {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    color: white;
-    
-    
-}
 .button-emp a{
     padding: 10px;
     text-decoration: none;
@@ -352,80 +480,26 @@ i {
     
 
 }
-.titulo-emprestimo{
-    display: flex;
-    flex-direction: row;  
-    align-items: center;   
-    text-align: center;  
-    justify-content:space-between ;    
-    width:958px;
-    height: 70px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    border-radius: 10px;     
-    background-color: #f9f9f9;
-    font-size: 18px;
-    padding-left: 80px;
-    padding-right: 20px;  
-    
-}
-.campo-emprestimo{
+
+/*Pagina historico*/
+
+.hist-autor{   
+    width: 240px;
+    height:248px;   
     display: flex;
     flex-direction: row;
-    justify-content: center;    
-    margin-top: 10px;
+    align-items: center;
+    justify-content: center;
+  
 }
-
-
-.descricao-emprestimo{
-    display: flex;
-    flex-direction: row;          
-    justify-content:space-between ;    
-    width:958px;
-    height: 250px;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ddd;
-    border-radius: 10px;     
-    background-color: #f9f9f9;
-
-    
-    
-}
-
-.card-emp{
+.hist-autor-nome{
     width: 200px;
-    height:200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-    
-}
-.emp-data{
-   
+    height:150px; 
     display: flex;
     flex-direction: row;
-    align-items: center;
-    padding:50px;
-
- 
+    justify-content: center;
+    align-items: center;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px
 }
-.emp-data-dev{
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 100px;
 
- 
-}
-.emp-data-emp{
-   
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 90px;
-
- 
-}
