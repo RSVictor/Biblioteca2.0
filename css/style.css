@@ -481,6 +481,9 @@ i {
 
 }
 
+.notificacao i{
+    font-size: 1.3rem;
+}
 /*Pagina historico*/
 
 .hist-autor{   
@@ -503,3 +506,195 @@ i {
     border-radius: 10px
 }
 
+.button-container {
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+  }
+
+  .button-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#335844;
+    width: 100px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    
+  }
+
+  .button-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button-link i {
+    font-size: 1.5rem; 
+    margin-bottom: 0.3rem; 
+  }
+
+  .button-text {
+    font-size: 1.2rem; 
+  }
+
+
+
+  /* Pagina perfil*/
+  .perfil{    
+    width: 833px;
+    height: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;       
+    border: 1px solid #ddd;
+    border-radius: 8px;    
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    font-size: 25px;
+   
+    
+}
+
+.dados{
+    width: 833px;
+    height: 650px;  
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    
+    
+}
+
+.titulo-perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    
+}
+.img-foto{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Ajusta a largura da imagem ao container */
+    height: auto; /* Mantém a proporção da imagem */
+
+}
+
+.button-foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#335844;
+    width: 185px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    
+  }
+
+  .foto-botao{     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.form-perfil{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;   
+    font-size: 18px;
+    }
+
+
+
+.button-perfil {
+    width: 833px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 0.3rem;       
+ }
+  
+.button-excluir {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center; 
+    justify-content: center;   
+    background-color:red;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+  }
+  .button-salvar {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;    
+    background-color:#335844;
+    width: 120px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+  }
+  
+
+   /* Pagina favoritos*/
+
+  .button-favorito {
+    width: 1140px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 0.3rem;       
+ }
+  
+ .titulo-fav{
+    display: flex;
+    flex-direction: row;  
+    align-items: center; 
+    text-align: center; 
+    justify-content: center;
+    width: 500px;         
+    height: 60px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    border-radius: 10px;     
+    background-color: #f9f9f9;
+    margin-top: 30px;
+    font-size: 28px;
+}
+
+  
+.card-fav {
+    width: 219px;
+    height: 330px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+ 
