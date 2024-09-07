@@ -733,25 +733,25 @@ i {
     color: white;
     border-radius: 10px;
     margin: 0 10px;
-  }
+}
 
 
   /* Pagina ADM */
   
   
 
-   .button-adm{    
-    display: flex;
-    flex-direction: row; 
-    align-items: center;   
-    justify-content: center;
-    width: 120px;
-    height: 35px;    
-    background-color: #335844;
-    border-radius: 10px;   
-    margin: 0 2px;
-    font-size: 14px;
-   }
+.button-adm{    
+display: flex;
+flex-direction: row; 
+align-items: center;   
+justify-content: center;
+width: 120px;
+height: 35px;    
+background-color: #335844;
+border-radius: 10px;   
+margin: 0 2px;
+font-size: 14px;
+}
 
 
 .button-adm a{
@@ -905,40 +905,164 @@ i {
 
 }
 
-    .input-adm-lista{
-        width: 530px;
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        position: relative;
-    }
+.input-adm-lista{
+    width: 530px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+}
 
-    .input-adm-lista input{
-        width: 250px;
-        height: 35px;
-        border-radius: 5px;
-        background-color:#C3C4C9 ;    
-        border: none;
-        padding: 10px;
-        text-decoration: none;
-        outline: none;
-        padding-right: 2.5rem; /* Espaço para o ícone */
-        
-        
-    }
-
-    .input-adm-lista button  {
-        display: flex;
-        align-items: center; 
-        position: absolute;
-        right: 0.1rem; /* Espaço do ícone da borda direita */
-        font-size: 1.2rem;
-        border: none;
-        background-color:#C3C4C9 ;
-        height: 32px;
-        
-    }
-    .titulo-adm-button-lista i{
-        color: white;
-    }
+.input-adm-lista input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:#C3C4C9 ;    
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    padding-right: 2.5rem; /* Espaço para o ícone */
     
+    
+}
+
+.input-adm-lista button  {
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    right: 0.1rem; /* Espaço do ícone da borda direita */
+    font-size: 1.2rem;
+    border: none;
+    background-color:#C3C4C9 ;
+    height: 32px;
+    
+}
+.titulo-adm-button-lista i{
+    color: white;
+}
+
+
+/* Pagina Adicionar livros*/
+
+.perfil-adicionar{    
+    width: 933px;
+    height: 900px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);   
+    align-items: center;      
+    border: 1px solid #ddd;
+    border-radius: 8px;    
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    font-size: 25px;
+    flex-grow: 1;
+   padding: 20px;
+   
+    
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.dados-adicionar{   
+     
+    display: flex;
+    flex-direction: row;  
+    background-color: #AFC1B1;
+    
+    
+}
+
+.titulo-adicionar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-weight: bold;
+    width: 933px;
+    
+}
+.img-foto img{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%; /* Ajusta a largura da imagem ao container */
+    height: auto; /* Mantém a proporção da imagem */
+
+}
+
+.button-foto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color:#335844;
+    width: 185px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    
+  }
+
+  .foto-botao{     
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+.form-adicionar{
+    display: flex;
+    flex-direction: column;   
+    justify-content: space-between;
+    gap: 10px;
+    width: 350px;   
+    font-size: 18px;
+    padding-left: 20px;
+    }
+
+
+  
+  .button-adicionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#335844;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;    
+  }
+  
+
+
+  .form-descricao{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;       
+    width: 450px; 
+    height: 300px;  
+  }
+
+
+.teste{   
+    height: 600px;
+}
+
+.button-salvar-livro{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    background-color:#335844;
+    width: 150px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+    
+}
