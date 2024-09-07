@@ -17,32 +17,42 @@ header {
     margin-right: 3px; /* Espaçamento entre o ícone e o texto */
   }
 
-  .nav-link:hover {
-    text-decoration: none; /* Remove o sublinhado no hover */
-    color: #000; /* Mantém a cor do texto no hover */
-  }
-
-  .btn-outline {
-    border: 1px solid #ced4da;
-    background-color: transparent;
-    color: #000;
-  }
-
-  .btn-outline:hover {
-    background-color: white; /* Remove o efeito de hover do botão */
-    color: #000;
-    border-color: #ced4da; /* Mantém a borda do botão */
-  }
-
-.form-control-dark {
-    width: 270px;
-    height: 41.5px;
-    border-radius: 10px 0 0 10px;
-
+  .input-logo input{
+    width: 250px;
+    height: 41px;
+    border-radius: 5px;
+    background-color:white ;    
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    padding-right: 2.5rem; /* Espaço para o ícone */
+    
+    
+}
+.input-logo button  {
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    right: 0.1rem; /* Espaço do ícone da borda direita */   
+    border: none;
+    background-color:white;
+    height: 39px;
+    border-radius: 0  10px;    
 }
 
-
-
+.titulo-logo i{
+    color: white;
+    
+}
+.input-logo{    
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+   
+}
+  
 
 .container {
     display: flex;
@@ -615,7 +625,7 @@ i {
 
 
 
-.button-perfil {
+.button-perfil-user {
     width: 900px;
     display: flex;
     flex-direction: row;
@@ -724,4 +734,211 @@ i {
     border-radius: 10px;
     margin: 0 10px;
   }
+
+
+  /* Pagina ADM */
   
+  
+
+   .button-adm{    
+    display: flex;
+    flex-direction: row; 
+    align-items: center;   
+    justify-content: center;
+    width: 120px;
+    height: 35px;    
+    background-color: #335844;
+    border-radius: 10px;   
+    margin: 0 2px;
+    font-size: 14px;
+   }
+
+
+.button-adm a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    
+
+}
+
+.titulo-adm-button{    
+    width: 833px;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;    
+    justify-content: s;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;    
+    background-color: #f9f9f9;
+   
+
+}
+
+.input-adm input{
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    background-color:#C3C4C9 ;    
+    border: none;
+    padding: 10px;
+    text-decoration: none;
+    outline: none;
+    padding-right: 2.5rem; /* Espaço para o ícone */
+    
+    
+}
+.input-adm button  {
+    display: flex;
+    align-items: center; 
+    position: absolute;
+    right: 0.1rem; /* Espaço do ícone da borda direita */
+    font-size: 1.2rem;
+    border: none;
+    background-color:#C3C4C9 ;
+    height: 32px;
+    
+}
+.titulo-adm-button i{
+    color: white;
+}
+
+.input-adm{
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
+}
+
+
+.titulo-adm{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;  
+    justify-content: space-between;             
+    width:933px;
+    height: 80px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    border-radius: 10px;     
+    background-color: #AFC1B1;
+    font-size: 20px;
+    
+}
+.lista-adm{
+    display: flex;
+    flex-direction: row;  
+    align-items: center;  
+    justify-content: space-between;             
+    width:933px;
+    height: 70px;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    border-radius: 10px;     
+    background-color: #C3C4C9;
+    column-gap: 10px; /* Espaço entre as colunas (opcional) */
+    
+    
+}
+
+.button-excluir-adm {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    background-color:red;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+    
+  }
+  .button-editar-adm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#335844;
+    width: 40px;
+    height: 40px;
+    color: white;
+    border-radius: 10px;
+    margin: 0 5px;
+    
+  }
+
+  .button-perfil{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .text-lista{
+    width: 155.27px; /* Largura fixa da div */
+    height: 70px; /* Altura fixa da div */
+    max-height: 70px; /* Altura máxima da div */
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+ 
+}
+
+.titulo-adm-button-lista{    
+    width: 833px;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;    
+    justify-content: s;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;    
+    background-color: #f9f9f9;
+    
+
+}
+
+    .input-adm-lista{
+        width: 530px;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        position: relative;
+    }
+
+    .input-adm-lista input{
+        width: 250px;
+        height: 35px;
+        border-radius: 5px;
+        background-color:#C3C4C9 ;    
+        border: none;
+        padding: 10px;
+        text-decoration: none;
+        outline: none;
+        padding-right: 2.5rem; /* Espaço para o ícone */
+        
+        
+    }
+
+    .input-adm-lista button  {
+        display: flex;
+        align-items: center; 
+        position: absolute;
+        right: 0.1rem; /* Espaço do ícone da borda direita */
+        font-size: 1.2rem;
+        border: none;
+        background-color:#C3C4C9 ;
+        height: 32px;
+        
+    }
+    .titulo-adm-button-lista i{
+        color: white;
+    }
+    
