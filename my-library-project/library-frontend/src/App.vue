@@ -1,8 +1,9 @@
 <template>
-  <div>
-    <!-- Lista de Livros -->
-    <BookList @edit-book="setBookToEdit" ref="bookList" />
+  <div id="app">
+    <!-- Formulário para adicionar ou editar um livro -->
     <BookForm :bookToEdit="bookToEdit" @book-added="fetchBooks" @book-updated="fetchBooks" />
+    <!-- Lista de livros -->
+    <BookList @edit-book="setBookToEdit" ref="bookList" />
   </div>
 </template>
 
@@ -29,7 +30,7 @@ export default {
     fetchBooks() {
       this.$refs.bookList.fetchBooks();
       this.bookToEdit = null; // Limpa o formulário após a ação
-    }
-  }
+    },
+  },
 };
 </script>
