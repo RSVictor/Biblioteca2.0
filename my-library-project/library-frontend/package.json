@@ -1,5 +1,5 @@
 {
-  "name": "library-frontend",
+  "name": "user-frontend",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,8 +10,9 @@
   "dependencies": {
     "axios": "^1.7.7",
     "core-js": "^3.8.3",
-    "library-frontend": "file:",
-    "vue": "^3.2.13"
+    "user-frontend": "file:",
+    "vue": "^3.2.13",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -34,7 +35,9 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {
+      "vue/multi-word-component-names": "off"
+    }
   },
   "browserslist": [
     "> 1%",
