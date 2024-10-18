@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'; 
 import Login from '../views/Login.vue'; 
 import Dashboard from '../views/Dashboard.vue'; 
-
+import PaginaEmprestimo from '../components/paginaemprestimo.vue'; 
+import PaginaFavoritos from '../components/paginaFavoritos.vue'; 
 const routes = [
   {
     path: '/login',
@@ -15,8 +16,18 @@ const routes = [
     meta: { requiresAuth: true },
   },
   {
+    path:'/pagina-favorito',
+    name: 'PaginaFavoritos',
+    component: PaginaFavoritos,
+  },
+  {
+    path: '/pagina-emprestimo', // Rota para a página de empréstimo
+    name: 'PaginaEmprestimo',
+    component: PaginaEmprestimo,
+  },
+  {
     path: '/:catchAll(.*)', // Usando a nova sintaxe para rotas coringa
-    redirect: '/login',
+    redirect: '/',
   },
 ];
 
@@ -30,7 +41,7 @@ router.beforeEach((to, from, next) => {
   const loggedIn = localStorage.getItem('token');
 
   if (to.matched.some(record => record.meta.requiresAuth) && !loggedIn) {
-    next('/login');
+    next('/'); // Redireciona para a página inicial
   } else {
     next();
   }
