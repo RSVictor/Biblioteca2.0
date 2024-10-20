@@ -1,38 +1,26 @@
 import { createRouter, createWebHistory } from 'vue-router'; 
-import Login from '../views/Login.vue'; 
-import Dashboard from '../views/Dashboard.vue'; 
-import PaginaEmprestimo from '../components/paginaemprestimo.vue'; 
-import PaginaFavoritos from '../components/paginaFavoritos.vue'; 
+import Home from '../views/HomePage.vue'; 
+
 const routes = [
   {
-    path: '/login',
-    name: 'Login',
-    component: Login,
+    path: '/HomePage',
+    name: 'HomePage',
+    component: Home,
   },
   {
-    path: '/dashboard',
-    name: 'Dashboard',
-    component: Dashboard,
-    meta: { requiresAuth: true },
-  },
-  {
-    path:'/pagina-favorito',
-    name: 'PaginaFavoritos',
-    component: PaginaFavoritos,
-  },
-  {
-    path: '/pagina-emprestimo', // Rota para a página de empréstimo
-    name: 'PaginaEmprestimo',
-    component: PaginaEmprestimo,
+  path: '/login',
+  name: 'login',
+  component: () => import('../views/LoginPage.vue')
   },
   {
     path: '/:catchAll(.*)', // Usando a nova sintaxe para rotas coringa
-    redirect: '/',
+    redirect: '/login', // Redireciona para a rota correta
   },
 ];
 
+// Criação do roteador
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 });
 
