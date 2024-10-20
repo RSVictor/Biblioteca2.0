@@ -4,7 +4,7 @@ import Home from '../views/HomePage.vue';
 const routes = [
   {
     path: '/HomePage',
-    name: 'HomePage',
+    name: 'homePage',
     component: Home,
   },
   {
@@ -13,8 +13,8 @@ const routes = [
   component: () => import('../views/LoginPage.vue')
   },
   {
-    path: '/:catchAll(.*)', // Usando a nova sintaxe para rotas coringa
-    redirect: '/login', // Redireciona para a rota correta
+    path: '/:catchAll(.*)', 
+    redirect: '/login', 
   },
 ];
 
